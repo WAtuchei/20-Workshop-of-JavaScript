@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+body {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: row !important;
+}
+
+.wrapper-col {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+}/*# sourceMappingURL=default.css.map */

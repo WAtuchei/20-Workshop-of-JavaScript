@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+@mixin Flexwrapper($direction) {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: $direction !important;
+}
+
+body {
+    @include Flexwrapper(column);
+    min-height: 100vh;
+
+}
+
+
+.wrapper {
+    @include Flexwrapper(row)
+}
+
+.wrapper-col {
+    @include Flexwrapper(column)
+}
