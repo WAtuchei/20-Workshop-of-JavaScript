@@ -14,7 +14,18 @@ const clockTime = () => {
 }
 
 timeBTN.addEventListener('click', () => {
-    timeBTN.textContent = "โหมดกลางวัน"
+    if ($('body').hasClass('dark')) {
+        $('body').removeClass('dark')
+        $(timeEl).css("color", "#000")
+        $(timeBTN).removeClass('darkClock')
+        $(timeBTN).text('โหมดกลางคืน')
+    }
+    else {
+        $('body').addClass('dark');
+        $(timeEl).css("color", "#fff")
+        $(timeBTN).addClass('darkClock')
+        $(timeBTN).text('โหมดกลางวัน');
+    }
 })
 
 clockTime();
