@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="scss/Custom/Default/default.css">
+    <link rel="stylesheet" href="scss/Custom/custom.css">
+    <title>Modal & PopUp</title>
+
+    <style>
+        body {
+            background-color: rgb(82, 99, 252) !important;
+        }
+        .con {
+            width: 280px !important;
+        }
+        .con button {
+            width: 100%;
+        }
+        section {
+            opacity: 0;
+            position: absolute;
+            width: 500px;
+            height: 300px;
+            background-color: #fff;
+            z-index: 2;
+            transition: ease .5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper w-100">
+        <div class="wrapper-col con">
+            <button id="openModal" class="btn btn-primary my-2">แสดงรายละเอียด</button>
+
+            <section class="wrapper-col px-5 text-center rounded">
+                <h1>นี่คือรายละเอียด</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iure!</p>
+                <button class="closeModal w-50 btn btn-primary">ปิด</button>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/5-Modal&PopUp.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
+</body>
+</html>
