@@ -19,28 +19,43 @@
         .con button {
             width: 100%;
         }
-        section {
+        #Modal {
+            display: flex;
+            flex-direction: column;
             opacity: 0;
+            pointer-events: none;
             position: absolute;
             width: 500px;
             height: 300px;
             background-color: #fff;
-            z-index: 2;
-            transition: ease .5s;
+            z-index: 4;
+            transition: all ease .5s;
         }
+        .modal-con {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            background-color: #1111119c !important;
+            opacity: 0;
+            z-index: 1;
+            pointer-events: none;
+            transition: all ease .5s;
+            }
     </style>
 </head>
 <body>
-    <div class="wrapper w-100">
+    <div class="wrapper-col w-100">
         <div class="wrapper-col con">
-            <button id="openModal" class="btn btn-primary my-2">แสดงรายละเอียด</button>
-
-            <section class="wrapper-col px-5 text-center rounded">
-                <h1>นี่คือรายละเอียด</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iure!</p>
-                <button class="closeModal w-50 btn btn-primary">ปิด</button>
-            </section>
+            <button class="openModal btn btn-primary my-2">แสดงรายละเอียด</button>
         </div>
+
+        <section id="Modal" class="px-5 justify-content-center align-items-center text-center rounded">
+            <h1>นี่คือรายละเอียด</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iure!</p>
+            <button class="closeModal w-50 btn btn-primary">ปิด</button>
+        </section>
+        
+        <div class="modal-con"></div>
     </div>
 
     <script src="js/5-Modal&PopUp.js"></script>
