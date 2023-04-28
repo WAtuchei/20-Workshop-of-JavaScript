@@ -7,36 +7,29 @@
 
     <link rel="stylesheet" href="scss/Custom/Default/default.css">
     <link rel="stylesheet" href="scss/Custom/custom.css">
-    <title>Page Scroll Indicator</title>
+    <title>Scroll to Top</title>
 
     <style>
         body {
             background-color: rgb(82, 99, 252) !important;
         }
-		  .scroll-int {
-			visibility: hidden;
-			position: fixed;
-			width: 100%;
-			height: 4px;
-			background-color: #fff;
-			z-index: 5;
-		  }
-		  	.progress-Bar {
-				width: 0%;
-				height: 4px;
-				background-color: red;
-			}
+		.Top-BTN {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            z-index: 5;
+            border: 1px solid red;
+            background-color: red;
+        } 
     </style>
 </head>
 <body>
-	<div class="w-100">
-		<section class="scroll-int">
-			<div class="progress-Bar"></div>
-		</section>
-		
+	<div class="w-100 position-relative">
 		<nav>
 			<nav class="navbar navbar-expand p-3 navbar-dark bg-primary">
-				<a class="navbar-brand" href="#">Scroll Progress</a>
+				<a class="navbar-brand" href="#">Scroll Top</a>
 				<button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
 					data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
 					aria-label="Toggle navigation"></button>
@@ -191,6 +184,10 @@
 				<a href="#" class="list-group-item list-group-item-action disabled">Disabled item</a>
 			</div>
 		</section>
+
+        <section class="Top-BTN h5 p-0 m-0 d-flex justify-content-center align-items-center text-light text-center rounded-circle">
+            <p class="text-center my-0 p-0">Top</p>
+        </section>
 	</div>
 
     <script src="js/6-PageScroll.js"></script>
