@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="scss/Custom/Default/default.css"> -->
+    <link rel="stylesheet" href="scss/Custom/custom.css">
+    <title>Modal & PopUp</title>
+
+    <style>
+        body {
+            background-color: rgb(82, 99, 252) !important;
+        }
+        .gallery {
+            width: 100vw;
+            height: 100vh !important;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
+        }
+        .gallery img {object-fit: cover; cursor: pointer;}
+        #Modal {
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+            position: fixed;
+            top: 35%;
+            left: 50%;
+            width: 500px;
+            height: 300px;
+            transform: translateX(-50%);
+            background-color: #ffffff00;
+            z-index: 4;
+            transition: all ease .5s;
+            pointer-events: all;
+        }
+        #fullIMG { max-width: 90vw; max-height: 820px; pointer-events: none; cursor: default;}
+        .modal-con {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background-color: #1111119c !important;
+            opacity: 0;
+            z-index: 3;
+            transition: all ease .5s;
+            cursor: default;
+            pointer-events: none;
+            }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img class="galleryIMG w-100 h-100" src="10-foods-images/small/s_1.jpg" data="1">
+        <img class="galleryIMG w-100 h-100" src="10-foods-images/small/s_2.jpg" data="2">
+        <img class="galleryIMG w-100 h-100" src="10-foods-images/small/s_3.jpg" data="3">
+        <img class="galleryIMG w-100 h-100" src="10-foods-images/small/s_4.jpg" data="4">
+        <img class="galleryIMG w-100 h-100" src="10-foods-images/small/s_5.jpg" data="5">
+        <img class="galleryIMG w-100 h-100" src="10-foods-images/small/s_6.jpg" data="6">
+        <img class="galleryIMG w-100 h-100" src="10-foods-images/small/s_7.jpg" data="7">
+        <img class="galleryIMG w-100 h-100" src="10-foods-images/small/s_8.jpg" data="8">
+    <div class="w-100">
+        </div>
+    
+        <section id="Modal" class="px-5 justify-content-center align-items-center text-center rounded">
+            <img id="fullIMG" src="" alt="">
+            <button class="closeModal w-50 mt-2 btn btn-primary">ปิด</button>
+        </section>
+    
+        <div class="modal-con"></div>
+    </div>
+
+    <script src="js/10-ImagePopUp.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
+</body>
+</html>

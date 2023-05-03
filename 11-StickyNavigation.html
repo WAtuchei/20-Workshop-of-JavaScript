@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="scss/Custom/custom.css">
+    <title>Sticky Navigation</title>
+
+    <style>
+        body {
+            background-color: rgb(82, 99, 252) !important;
+        }
+        nav { transition: all ease 1s; }
+    </style>
+</head>
+<body>
+    <div class="">
+        <nav class="navbar navbar-expand navbar-dark p-3 sticky-top bg-primary">
+            <a class="navbar-brand" href="#">Scroll Top</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Home <span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <section>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            This is the first item's accordion body.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            This is the first item's accordion body.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            This is the first item's accordion body.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            This is the first item's accordion body.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            This is the first item's accordion body.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Hover added -->
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">Active item</a>
+                <a href="#" class="list-group-item list-group-item-action">Item</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Disabled item</a>
+            </div>
+            <!-- Hover added -->
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">Active item</a>
+                <a href="#" class="list-group-item list-group-item-action">Item</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Disabled item</a>
+            </div>
+            <!-- Hover added -->
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">Active item</a>
+                <a href="#" class="list-group-item list-group-item-action">Item</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Disabled item</a>
+            </div>
+            <!-- Hover added -->
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">Active item</a>
+                <a href="#" class="list-group-item list-group-item-action">Item</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Disabled item</a>
+            </div>
+            <!-- Hover added -->
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">Active item</a>
+                <a href="#" class="list-group-item list-group-item-action">Item</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Disabled item</a>
+            </div>
+            <!-- Hover added -->
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">Active item</a>
+                <a href="#" class="list-group-item list-group-item-action">Item</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Disabled item</a>
+            </div>
+            <!-- Hover added -->
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">Active item</a>
+                <a href="#" class="list-group-item list-group-item-action">Item</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Disabled item</a>
+            </div>
+            <!-- Hover added -->
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">Active item</a>
+                <a href="#" class="list-group-item list-group-item-action">Item</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Disabled item</a>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/11-StickyNavigation.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
+</body>
+</html>
