@@ -28,29 +28,6 @@
             justify-content: flex-end !important;
             pointer-events: none;
         }
-        .noti-item {
-            width: 100%;
-            height: 10%;
-            margin: .5rem 0;
-            padding: 1.5rem 0;
-            color: #112211;
-            font-size: 20px;
-            font-weight: 500;
-            background-color: #fff;
-            border-radius: 10px;
-            text-align: center;
-            animation: fading .5s ease;
-            cursor: pointer;
-            pointer-events: all;
-        }
-        @keyframes fading {
-            from {opacity: 0;}
-            to {opacity: 1;}
-        }
-        @keyframes fading-out {
-            from {opacity: 1;}
-            to {opacity: 0;}
-        }
     </style>
 </head>
 <body>
@@ -59,11 +36,8 @@
             <button id="notiBTN" class="btn btn-primary my-2">สุ่มแจ้งเตือน</button>
         </div>
     </div>
-
-    <div class="noti-con wrapper-col">
-    </div>
     
-    <script src="js/12-RandomNotification.js"></script>
+    <script src="js/13-SoundBoard.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
 </body>
 </html>
