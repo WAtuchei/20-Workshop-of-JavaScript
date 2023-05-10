@@ -7,19 +7,31 @@
 
     <link rel="stylesheet" href="scss/Custom/Default/default.css">
     <link rel="stylesheet" href="scss/Custom/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Hidden Search Widget</title>
 
     <style>
         body {
             background-color: rgb(82, 99, 252) !important;
         }
+        #searchInt { 
+            width: 0%;
+            visibility: hidden;
+            transition: all ease .25s;
+        }
+        .active-int {
+            width: 80% !important;
+            visibility: visible !important;
+        } 
     </style>
 </head>
 <body>
     <div class="wrapper w-100 text-light">
         <div class="wrapper">
-            <input id="" class="mt-0 p-1 px-2" type="text">
-            <button id="" class="btn btn-primary my-2">คัดลอก</button>
+            <input id="searchInt" class="m-0 p-1 px-2" type="text">
+            <button id="searchBTN" class="btn btn-primary my-2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
         </div>
     </div>
     
