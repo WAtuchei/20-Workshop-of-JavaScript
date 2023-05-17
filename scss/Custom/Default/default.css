@@ -17,7 +17,6 @@ body {
   justify-content: center !important;
   align-items: center !important;
   flex-direction: row !important;
-  flex-wrap: wrap;
 }
 
 .wrapper-col {
@@ -25,5 +24,4 @@ body {
   justify-content: center !important;
   align-items: center !important;
   flex-direction: column !important;
-  flex-wrap: wrap;
 }/*# sourceMappingURL=default.css.map */

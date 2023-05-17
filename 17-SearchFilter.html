@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/Custom/Default/default.css">
+    <link rel="stylesheet" href="scss/Custom/custom.css">
+
+    <title>Search Filter | Countries API</title>
+
+    <style>
+        body {
+            background-color: rgb(82, 99, 252) !important;
+        }
+        .header {
+            width: 440px;
+            background-color: #1e1e21;
+        }
+        .header span {color: orange;}
+        .header input {
+            all: unset;
+            width: 60%;
+        }
+        /* content */
+        .content {
+            width: 440px;
+            max-height: 500px;
+            overflow-y: scroll;
+            background-color: #fff;
+            visibility: hidden;
+            justify-content: space-between !important;
+        }
+        .Cardcontent img {width: 80px;}
+        .Cardcontent span {color: #1e87ff; font-weight: bold;}
+        /* .Cardcontent { justify-content: space-around !important;} */
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper-col">
+            <div class="header wrapper-col py-3 rounded text-light">
+                <h1>Countries API</h1>
+                <p class="mt-0"><span>search filter:</span> https://restcountries.com/</p>
+                <input id="filter" class="px-2 rounded-pill bg-light text-dark" type="text">
+            </div>
+
+            <div class="content wrapper-col p-2 rounded">
+                <!-- Search Content -->
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="js/17-SearchFilter.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</body>
+</html>
