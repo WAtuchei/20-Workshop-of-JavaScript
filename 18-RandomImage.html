@@ -7,35 +7,40 @@
 
     <link rel="stylesheet" href="scss/Custom/Default/default.css">
     <link rel="stylesheet" href="scss/Custom/custom.css">
-    <title>Countries API</title>
+    <title>Random Images</title>
 
     <style>
         body {
             background-color: rgb(82, 99, 252) !important;
         }
         .Cards {
-            width: 200px !important;
-            height: 240px !important;
+            max-width: 300px !important;
             color: #000;
             background-color: #d6d6d6;
             border-radius: 30px;
+            overflow: hidden;
         }
-        .Cards img {width: 75%;}
+        .Cards img {
+            width: 100%; 
+            object-fit: cover;
+        }
         .Cards-con {flex-wrap: wrap;}
     </style>
 </head>
 <body>
     <div class="wrapper-col my-3 text-light">
-        <h1>Countries API</h1>
-        <p>https://restcountries.com/</p>
+        <h1>Random Images</h1>
+        <p>https://images.unsplash.com/</p>
     </div>
     <div class="wrapper-col w-100 py-3 text-light">
         <div class="Cards-con wrapper w-100 px-5 py-3">
-            
+            <div class="Cards mx-3 my-2">
+                <img src="https://images.unsplash.com/photo-1679502459828-e78ab0327e0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="">
+            </div>
         </div>
     </div>
     
-    <script src="js/14-CountriesAPI.js"></script>
+    <script src="js/18-RandomImage.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </body>
 </html>

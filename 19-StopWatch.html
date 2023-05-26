@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="scss/Custom/Default/default.css">
+    <link rel="stylesheet" href="scss/Custom/custom.css">
+    <title>Stop Watch</title>
+
+    <style>
+        body {
+            background-color: rgb(82, 99, 252) !important;
+        }
+        #timeEl {
+            font-size: 54px;
+        }
+        .ClockBTN {
+            all: unset;
+            background-color: #fff;
+            color: #000;
+            border: 2px solid #000;
+            filter: brightness(.8);
+            transition: all ease .3s;
+        }
+        .ClockBTN:nth-child(1) {
+            background-color: rgb(57, 255, 57);
+        }
+        .ClockBTN:nth-child(2) {
+            background-color: rgb(255, 77, 77);
+        }
+        .ClockBTN:nth-child(3) {
+            background-color: rgb(102, 255, 255);
+        }
+        .ClockBTN:hover {filter: brightness(1);}
+        .ClockBTN:active {filter: brightness(.5);}
+    </style>
+</head>
+<body>
+    <div class="wrapper w-100 text-light">
+        <div class="wrapper-col">
+            <h3 class="my-2 text-dark">Stop Watch</h3>
+            <h1 id="timeEl">00 : 00 : 99</h1>
+
+            <div class="wrapper">
+                <button class="ClockBTN mx-2 px-3 py-2 rounded">Start</button>
+                <button class="ClockBTN mx-2 px-3 py-2 rounded">Stop</button>
+                <button class="ClockBTN mx-2 px-3 py-2 rounded">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/19-StopWatch.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
+</body>
+</html>
