@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="scss/Custom/custom.css">
+    <link rel="stylesheet" href="scss/Custom/Default/default.css">
+    <title>BMI</title>
+
+    <style>
+        body {
+            background-color: rgb(82, 99, 252) !important;
+        }
+        main {
+            position: relative;
+            width: 420px;
+            height: 480px;
+            background-color: #1e1e21;
+            border-radius: 30px;
+        }
+        main h1 {position: absolute; top: 2rem;}
+        label {color: orange;}
+        button {background-color: orange;}
+        button:active {filter: brightness(.8);}
+        .Results {
+            position: absolute;
+            bottom: 1.7rem;
+            font-size: 24px;
+            pointer-events: none;
+        }
+        .appear-alert {
+            animation: appear .4s 3 alternate; background-color: rgba(255, 52, 52, 0.74);}
+        .appear-average {
+            animation: appear .4s alternate; background-color: green;}
+        .appear-chubby {
+            animation: appear .4s alternate; background-color: rgb(25, 79, 255);}
+        .appear-fat {
+            animation: appear .4s 3 alternate; background-color: rgb(156, 51, 255);}
+        @keyframes appear {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <main class="wrapper-col text-light">
+            <h1 class="">BMI Calculator</h1>
+
+            <div class="inputs-con wrapper-col px-4 w-100">
+                <div class="inputs my-3 w-100">
+                    <label for="weight" class="mb-1 px-1">Weight (kgs)</label>
+                    <input id="weight" class="w-100 p-1 px-2 rounded" type="text">
+                </div>
+    
+                <div class="inputs my-3 w-100">
+                    <label for="height" class="mb-1 px-1">Height (cms)</label>
+                    <input id="height" class="w-100 p-1 px-2 rounded" type="text">
+                </div>
+    
+                <button id="BTN" class="w-100 mt-4 py-2 rounded">Calculate</button>
+            </div>
+
+            <div class="Results wrapper w-100 py-3"></div>
+        </main>
+    </div>
+
+    <script src="js/20-BMI.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
+</body>
+</html>
