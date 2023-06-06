@@ -23,19 +23,19 @@ function CalculateBMI(kgs, cms) {
         bmi = (wt / ht ** 2).toFixed(2)
 
         if (bmi < 18.5) {
-            $(result).text(bmi + ' = ผอมเกินไป')
+            $(result).text(`${bmi} = ผอมเกินไป`)
             $(result).addClass('appear-alert')
         }
         else if (bmi < 25) {
-            $(result).text(bmi + ' = ปกติ')
+            $(result).text(`${bmi} = ปกติ`)
             $(result).addClass('appear-average')
         }
         else if (bmi < 30) {
-            $(result).text(bmi + ' = อ้วน')
+            $(result).text(`${bmi} = อ้วน`)
             $(result).addClass('appear-chubby')
         }
         else {
-            $(result).text(bmi + ' = อ้วนมาก')
+            $(result).text(`${bmi} = อ้วนมาก`)
             $(result).addClass('appear-fat')
         }
     }

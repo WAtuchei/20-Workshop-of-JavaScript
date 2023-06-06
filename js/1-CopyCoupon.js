@@ -6,6 +6,7 @@ copyBTN.addEventListener("click", (e) => {
     copyInput.setSelectionRange(0, 99)
     navigator.clipboard.writeText(copyInput.value)
     copyBTN.textContent = 'คัดลอกแล้ว'
+    
     setTimeout(() => {
         copyBTN.textContent = 'คัดลอก'
     },10000);
